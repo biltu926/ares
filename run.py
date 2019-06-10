@@ -14,9 +14,9 @@ def upload_data():
 def download_result():
     ''' Download the REQ data'''
 
-@app.route("/req", methods=['GET'])
+@app.route("/replenishment", methods=['GET'])
 def compute_replenishment_order():
-    ''' Compute the REQ'''
+    ''' Compute the replenishment orders'''
     #return render_template('home.html', resolver=resolver.ares_resolver.resolver_replenishment_order())
     return resolver.ares_resolver.resolver_replenishment_order()
 
